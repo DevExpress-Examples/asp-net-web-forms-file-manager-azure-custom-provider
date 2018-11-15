@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [AzureFileStorageProvider.cs](./CS/DXWebApplication1/AzureFileStorageProvider.cs) (VB: [AzureFileStorageProvider.vb](./VB/DXWebApplication1/AzureFileStorageProvider.vb))
+* [WebForm1.aspx](./CS/DXWebApplication1/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/DXWebApplication1/WebForm1.aspx))
+* [WebForm1.aspx.cs](./CS/DXWebApplication1/WebForm1.aspx.cs) (VB: [WebForm1.aspx](./VB/DXWebApplication1/WebForm1.aspx))
+<!-- default file list end -->
 # ASPxFileManager - How to implement a custom provider with Azure File storage/ File Service
 
 
