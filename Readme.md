@@ -3,18 +3,32 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T532265)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# File Manager for ASP.NET Web Forms - How to implement a custom file system provider for Azure Storage
+
+
+This example demonstrates how to use our [ASPxFileManager](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxFileManager) control with <a href="https://blogs.msdn.microsoft.com/windowsazurestorage/2014/05/12/introducing-microsoft-azure-file-service/">the Azure File storage  / File Service</a>. 
+
+## Implementation Details
+
+Create a [custom file system provider](https://docs.devexpress.com/AspNet/9907/components/file-management/file-manager/concepts/file-system-providers/custom-file-system-provider) and use [Azure SDK](https://azure.microsoft.com/en-us/downloads/) to implement all required functionality. Note that [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) is supported in [ASPxFileManager](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxFileManager) by default. 
+
+To run the example, define `AccountName`, `KeyValue`, and `FileShare constants with your credentials in the [AzureFileStorageProvider](./CS/DXWebApplication1/AzureFileStorageProvider.cs) class.
+
+> [!NOTE]
+> [ASPxFileManager](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxFileManager) supports the most popular cloud services, including [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) out of the box. For more information, refer to the following topic: [Azure File System Provider](https://docs.devexpress.com/AspNet/17780/components/file-management/file-manager/concepts/file-system-providers/azure-file-system-provider).
+
+## Files to Review
 
 * [AzureFileStorageProvider.cs](./CS/DXWebApplication1/AzureFileStorageProvider.cs) (VB: [AzureFileStorageProvider.vb](./VB/DXWebApplication1/AzureFileStorageProvider.vb))
 * [WebForm1.aspx](./CS/DXWebApplication1/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/DXWebApplication1/WebForm1.aspx))
 * [WebForm1.aspx.cs](./CS/DXWebApplication1/WebForm1.aspx.cs) (VB: [WebForm1.aspx.vb](./VB/DXWebApplication1/WebForm1.aspx.vb))
-<!-- default file list end -->
-# ASPxFileManager - How to implement a custom provider with Azure File storage/ File Service
 
+## Documentation
 
-<p>This example describes how to use our file manager control with <a href="https://blogs.msdn.microsoft.com/windowsazurestorage/2014/05/12/introducing-microsoft-azure-file-service/">the Azure File storage  / File Service</a>. The main idea is to create a <a href="https://documentation.devexpress.com/AspNet/9907/ASP-NET-WebForms-Controls/File-Management/File-Manager/Concepts/File-System-Providers/Custom-File-System-Provider">custom file system provider</a> and use <a href="https://azure.microsoft.com/en-us/downloads/">Azure SDK</a> to implement all required operations. As a starting point, it is possible to use the <a href="https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-how-to-use-files">Get started with Azure File storage on Windows</a> Microsoft documentation.<br><br>To run the example, define the <strong>AccountName</strong>, <strong>KeyValue</strong>, and <strong>FileShare</strong> constants with your credentials in the <strong><em>AzureFileStorageProvider</em></strong> class.<br><br>Please note that <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">the Azure Blob Storage</a> is supported in our ASPxFileManager by default. You can review <a href="https://demos.devexpress.com/ASPxFileManagerAndUploadDemos/FileManager/AzureProvider.aspx">our Demo</a>, where it is shown how to configure the file manager in this case.<br><br>See also:<br><a href="https://www.devexpress.com/Support/Center/p/E5024">ASPxFileManager - How to implement a List data bound custom file system provider</a><br><a href="https://www.devexpress.com/Support/Center/p/E2900">ASPxFileManager - How to implement a LINQ to SQL based file system provider</a></p>
+* [Develop for Azure Files with .NET](https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files)
 
-<br/>
+## More Examples
 
-
+* [How to implement a custom file system provider for a List data source](https://github.com/DevExpress-Examples/asp-net-web-forms-file-manager-list-custom-file-system-provider)
+* [How to implement a custom file system provider for LINQ to SQL data source](https://github.com/DevExpress-Examples/asp-net-web-forms-file-manager-linq-to-sql-custom-file-system-provider)
