@@ -14,8 +14,7 @@ This example demonstrates how to implement a custom file system provider to use 
 
 Create a [custom file system provider](https://docs.devexpress.com/AspNet/9907/components/file-management/file-manager/concepts/file-system-providers/custom-file-system-provider) and use [Azure SDK](https://azure.microsoft.com/en-us/downloads/) to implement all required functionality.
 
-To run the example, define `AccountName`, `KeyValue`, and `FileShare constants with your credentials in the [AzureFileStorageProvider](./CS/DXWebApplication1/AzureFileStorageProvider.cs) class.
-
+To run the example, define `AccountName`, `KeyValue`, and `FileShare` constants with your credentials in the [AzureFileStorageProvider](./CS/DXWebApplication1/AzureFileStorageProvider.cs) class.
 
 
 ## Files to Review
